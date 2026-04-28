@@ -1,0 +1,16 @@
+:root {
+  --font-family-main: "Open Sans", sans-serif;
+  --font-weight-title: 700;
+  --font-size-title: 17px;
+  --letter-spacing-title: 2.5%; 
+
+  --font-weight-text: 400;
+  --font-size-text: 14px;
+  --line-height-text: 157%;
+
+  --color-title: #2F948C;
+  --color-text: #454545;
+  --color-icons: #2F948C;
+  --bg-color-card: #F5FBFA;
+  --bg-color-page: #fff;
+}

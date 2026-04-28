@@ -1,0 +1,80 @@
+.page {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--bg-color-page);
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-text);
+}
+
+.header {
+  height: 346px;
+  background-color: #000;
+}
+
+.main {
+  display: grid;
+  justify-items: center;
+}
+
+.section {
+  display: grid;
+  max-width: 1140px;
+}
+
+.list-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 29px 40px;
+}
+
+.list-buttons__button {
+  height: 135px;
+  gap: 20px;
+  background-color: var(--bg-color-card);
+  border-radius: 30px;
+  padding: 22px 25px 24px 22px;
+
+}
+
+.button {
+  text-decoration: none; 
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.list-buttons__icons {
+  display: block;
+}
+
+.list-buttons__icon {
+  width: 56px;
+  height: 56px;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+.list-buttons__title {
+  font-size: var(--font-size-title);
+  letter-spacing: var(--letter-spacing-title);
+  font-weight: var(--font-weight-title);
+  color: var(--color-title);
+  padding-bottom: 10px;
+}
+
+.list-buttons__text {
+  font-size: var(--font-size-text);
+  line-height: var(--line-height-text);
+  color: var(--color-text);
+}
+
+.list-buttons__arrow {
+  width: 32px;
+  height: 32px;
+  margin-top: 55px;
+  flex-shrink: 0;
+}

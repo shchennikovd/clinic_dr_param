@@ -1,0 +1,16 @@
+ШРИФРЫ:
+h2 Open Sans 700 17px letter spacing -1.5%
+
+p Open Sans 400 14px line height 157% letter spacing -1%
+
+
+ЦВЕТА:
+h2 #2F948C
+
+p #454545
+
+icons #2F948C
+
+bg card #E1F6F4
+
+bg page #FFFFFF
