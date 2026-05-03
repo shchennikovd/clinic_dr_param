@@ -1,7 +1,7 @@
 :root {
   --font-family-main: "Open Sans", sans-serif;
   --font-weight-title: 700;
-  --font-size-title: 17px;
+  --font-size-title: clamp(1rem, 0.9856rem + 0.0641vw, 1.0625rem);
   --letter-spacing-title: 2.5%; 
 
   --font-weight-text: 400;
