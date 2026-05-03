@@ -9,5 +9,5 @@
     <link rel="stylesheet" href="./assets/globals.css" />
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
-  <body class="page">
-    <header class="header"></header>
+  <body class="patients-page">
+    <header class="patients-header"></header>

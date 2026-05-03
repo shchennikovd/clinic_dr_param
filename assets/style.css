@@ -1,4 +1,4 @@
-.page {
+.patients-page {
   max-width: 1920px;
   margin: 0 auto;
   width: 100%;
@@ -8,19 +8,19 @@
   font-weight: var(--font-weight-text);
 }
 
-.header {
-  min-height: 200px;
-  height: clamp(200px, 20vw, 346px);
+.patients-header {
+  height: clamp(213px, 20vw, 346px);
   background-color: #000;
   width: 100%;
 }
 
-.main {
+.patients-main {
   display: grid;
   justify-items: center;
+  margin-bottom: 263px;
 }
 
-.section {
+.patients-section {
   display: grid;
   justify-self: center;
   max-width: 1140px;
@@ -28,13 +28,13 @@
   padding: 0 20px;
 }
 
-.list-buttons {
+.patients-list-buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 29px 40px;
 }
 
-.list-buttons__button {
+.patients-list-buttons__button {
   min-height: 135px;
   height: auto;
   gap: 20px;
@@ -44,27 +44,27 @@
   width: 100%;
 }
 
-.button {
+.patients-button {
   text-decoration: none; 
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-.list-buttons__icons {
+.patients-list-buttons__icons {
   display: block;
 }
 
-.list-buttons__icon {
+.patients-list-buttons__icon {
   width: clamp(35px, 30.38px + 1.28vw, 55px);
   height: clamp(35px, 30.38px + 1.28vw, 55px);
 }
 
-.container {
+.patients-container {
   flex-grow: 1;
 }
 
-.list-buttons__title {
+.patients-list-buttons__title {
   font-size: var(--font-size-title);
   letter-spacing: var(--letter-spacing-title);
   font-weight: var(--font-weight-title);
@@ -72,26 +72,42 @@
   padding-bottom: 10px;
 }
 
-.list-buttons__text {
+.patients-list-buttons__text {
   font-size: var(--font-size-text);
   line-height: var(--line-height-text);
   color: var(--color-text);
 }
 
-.list-buttons__arrow {
+.patients-list-buttons__arrow {
   width: 32px;
   height: 32px;
   margin-top: 55px;
   flex-shrink: 0;
 }
 
-
 @media (max-width: 800px) {
-  .list-buttons {
-    grid-template-columns: 1fr;
+  .patients-main {
+    margin-bottom: 184px;
   }
 
-  .list-buttons__arrow {
+  .patients-section {
+    padding: 0 18px;
+  }
+
+  .patients-list-buttons {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .patients-list-buttons__button {
+    padding: 21px 41px 17px 19px;
+  }
+
+  .patients-button {
+    gap: 13px;
+  }
+
+  .patients-list-buttons__arrow {
     display: none;
   }
 }
