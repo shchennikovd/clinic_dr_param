@@ -1,0 +1,363 @@
+.omc-page {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--bg-color-page);
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-text);
+}
+
+.omc-header {
+  height: clamp(213px, 20vw, 346px);
+  background-color: #000;
+  width: 100%;
+}
+
+/* Переключает отображение панелей на основе присутствия атрибута hidden */
+.oms-directions__panel[hidden] {
+  display: none;
+}
+
+/* Базовая стилизация для демонстрации переключения */
+.oms-directions__tablist {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.oms-directions__tab {
+  padding: 10px 20px;
+  border: 1px solid #00828a;
+  background-color: transparent;
+  color: #00828a;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Стили для активной вкладки согласно БЭМ-модификатору */
+.oms-directions__tab--active {
+  background-color: #00828a;
+  color: #ffffff;
+}
+
+.oms-directions__tab:focus-visible {
+  outline: 2px solid #005a60;
+  outline-offset: 2px;
+}
+
+.oms-promo {
+  background-color: #f5fbfa;
+  padding-bottom: 43px;
+  /* padding: clamp(40px, 6vw, 80px) clamp(16px, 4vw, 40px); это нахуй убрать и заменить на justify-content */
+}
+
+.oms-promo__container {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  gap: 71px;
+  max-width: 1134px;
+  margin: 0 auto;
+}
+
+.oms-promo__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.oms-promo__title {
+  font-size: clamp(1.875rem, 1.7885rem + 0.3846vw, 2.25rem);
+  color: #00828a;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.oms-promo__description {
+  font-size: clamp(1rem, 0.9423rem + 0.2564vw, 1.25rem);
+  line-height: 1.6;
+  letter-spacing: -1%;
+  color: #555555;
+  margin-bottom: 55px;
+  max-width: 547px;
+}
+
+.oms-promo__steps-heading {
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 700;
+  letter-spacing: -1%;
+  line-height: 1.6;
+  padding-left: 6px;
+  color: #00828a;
+  margin-bottom: 22px;
+}
+
+/* Список шагов 1-2-3 */
+.oms-promo__steps {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+}
+
+/* норм код вроде */
+
+.oms-promo__step {
+  position: relative;
+
+  width: 100%;
+
+  padding: 120px 40px 40px;
+
+  background-color: #d8e2e0;
+
+  border-radius: 0 52px 52px 52px;
+
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* вырез в левом верхнем углу */
+.oms-promo__step::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 96px;
+  height: 96px;
+
+  background-color: #ffffff;
+
+  border-bottom-right-radius: 48px;
+
+  z-index: 1;
+}
+
+/* круг с номером */
+.oms-promo__step-number {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 86px;
+  height: 86px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #eef3f2;
+
+  color: #2f9992;
+
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1;
+
+  z-index: 2;
+}
+
+/* иконка */
+.oms-promo__step-icon-wrapper {
+  width: 41px;
+  height: 41px;
+
+  margin: 0 auto 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oms-promo__step-icon-wrapper svg,
+.oms-promo__step-icon-wrapper img {
+  width: 41px;
+  height: 41px;
+
+  object-fit: contain;
+}
+
+/* заголовок */
+.oms-promo__step-title {
+  margin: 0 0 24px;
+
+  color: #2f9992;
+
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* текст */
+.oms-promo__step-text {
+  margin: 0;
+
+  max-width: 260px;
+
+  color: #5f5f5f;
+
+  font-size: 24px;
+  line-height: 1.45;
+}
+/* норм код вроде */
+
+.oms-promo__step {
+  position: relative;
+  background-color: #f1f9f8;
+  border-radius: 32px;
+  border-top-left-radius: 12px; /* Создает красивое скругление вокруг номера */
+  padding: 40px 24px 32px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.oms-promo__step-number {
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  width: 48px;
+  height: 48px;
+  background-color: #f1f9f8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #00828a;
+  box-shadow: 0 0 0 6px var(--bg-color-page, #ffffff); /* Оптический вырез под фон */
+}
+
+.oms-promo__step-icon-wrapper {
+  color: #00828a;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41px;
+  height: 41px;
+}
+
+.oms-promo__step-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #00828a;
+  margin: 0 0 10px 0;
+}
+
+.oms-promo__step-text {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #666666;
+  margin: 0;
+}
+
+/* Изображение справа */
+.oms-promo__image-wrapper {
+  width: 439px;
+  height: 444px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oms-promo__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+
+/* ==========================================================================
+   2. Секция Направления (oms-directions)
+   ========================================================================== */
+
+.oms-directions {
+  padding: clamp(40px, 6vw, 80px) clamp(16px, 4vw, 40px);
+}
+
+.oms-directions__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.oms-directions__title {
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 700;
+  color: #00828a;
+  margin: 0 0 32px 0;
+}
+
+/* Контейнер для вкладок в виде аккуратной плашки */
+.oms-directions__tablist {
+  display: inline-flex;
+  border-radius: 100px;
+  padding: 6px;
+  gap: 4px;
+  margin-bottom: 48px;
+}
+
+/* Сетка карточек направлений */
+.oms-directions__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.oms-directions__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f9f8;
+  border-radius: 32px;
+  padding: 32px 40px;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+  min-height: 120px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.oms-directions__card:hover,
+.oms-directions__card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 130, 138, 0.08);
+  outline: none;
+}
+
+.oms-directions__card-title {
+  font-size: clamp(16px, 1.8vw, 18px);
+  font-weight: 700;
+  color: #00828a;
+  line-height: 1.4;
+  max-width: 70%;
+}
+
+.oms-directions__card-icon {
+  color: #87ccc5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.oms-directions__card-icon svg {
+  width: 50px;
+  height: 50px;
+}
