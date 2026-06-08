@@ -10,41 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     activateTab(clickedTab);
   });
 
-  tabList.addEventListener('keydown', (e) => {
-    let index = Array.from(tabs).indexOf(document.activeElement);
-    if (index === -1) return;
-
-    let nextIndex;
-
-    switch (e.key) {
-      case 'ArrowRight':
-      case 'ArrowDown':
-        nextIndex = (index + 1) % tabs.length;
-        tabs[nextIndex].focus();
-        e.preventDefault();
-        break;
-      case 'ArrowLeft':
-      case 'ArrowUp':
-        nextIndex = (index - 1 + tabs.length) % tabs.length;
-        tabs[nextIndex].focus();
-        e.preventDefault();
-        break;
-      case 'Home':
-        tabs[0].focus();
-        e.preventDefault();
-        break;
-      case 'End':
-        tabs[tabs.length - 1].focus();
-        e.preventDefault();
-        break;
-      case ' ':
-      case 'Enter':
-        activateTab(tabs[index]);
-        e.preventDefault();
-        break;
-    }
-  });
-
   function activateTab(targetTab) {
     tabs.forEach(tab => {
       const isActive = tab === targetTab;
