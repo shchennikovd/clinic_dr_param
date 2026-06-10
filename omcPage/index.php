@@ -14,9 +14,8 @@
 
         <ol class="oms-promo__steps">
           <li class="oms-promo__step">
-            <div class="oms-promo__step-number">1</div>
             <div class="oms-promo__step-container">
-              <h3 class="oms-promo__step-title">Выберите регион</h3>
+              <h3 class="oms-promo__step-title">1. Выберите регион</h3>
               <p class="oms-promo__step-text">Саратов или другие регионы</p>
             </div>
             <div class="oms-promo__step-icon-wrapper">
@@ -24,9 +23,8 @@
             </div>
           </li>
           <li class="oms-promo__step">
-            <div class="oms-promo__step-number">2</div>
             <div class="oms-promo__step-container">
-              <h3 class="oms-promo__step-title">Найдите услугу</h3>
+              <h3 class="oms-promo__step-title">2. Найдите услугу</h3>
               <p class="oms-promo__step-text">В списке  направлений по ОМС</p>
             </div>
             <div class="oms-promo__step-icon-wrapper">
@@ -34,13 +32,12 @@
             </div>
           </li>
           <li class="oms-promo__step">
-            <div class="oms-promo__step-number">3</div>
             <div class="oms-promo__step-container">
-              <h3 class="oms-promo__step-title">Подайте заявку</h3>
+              <h3 class="oms-promo__step-title">3. Подайте заявку</h3>
               <p class="oms-promo__step-text">На странице услуги</p>
             </div>
             <div class="oms-promo__step-icon-wrapper">
-              <img src="./assets/img/icons/map-pin.svg" alt="" class="oms-promo__step-icon">
+              <img src="./assets/img/icons/check-circle.svg" alt="" class="oms-promo__step-icon">
             </div>
           </li>
         </ol>

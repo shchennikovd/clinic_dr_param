@@ -14,51 +14,6 @@
   width: 100%;
 }
 
-.oms-directions__panel[hidden] {
-  display: none;
-}
-
-.oms-directions {
-  margin-bottom: 131px;
-}
-
-/* Табуляция */
-.oms-directions__tablist {
-  display: flex;
-  width: clamp(316px, calc(300.77px + 4.231vw), 382px);
-  gap: 10px;
-  padding: 6px;
-  margin-bottom: 53px;
-  border-radius: 30px;
-  background-color: #f5fbfa;
-}
-
-.oms-directions__tab {
-  height: clamp(32px, calc(30.62px + 0.385vw), 38px);
-  width: clamp(158px, calc(150.38px + 2.115vw), 191px);
-  background-color: #f5fbfa;
-  color: #00828a;
-  border-radius: 30px;
-  font-family: inherit;
-  line-height: 1.6;
-  letter-spacing: -1%;
-  font-size: 13px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.oms-directions__tab--active {
-  background-color: #00828a;
-  color: #ffffff;
-}
-
-.oms-directions__tab:focus-visible {
-  outline: 2px solid #005a60;
-  outline-offset: 2px;
-}
-
-/* Промо-секция */
 .oms-promo {
   background-color: #f5fbfa;
   padding-bottom: 43px;
@@ -67,7 +22,7 @@
 .oms-promo__container {
   display: grid;
   grid-template-columns: 1fr min-content;
-  gap: 71px;
+  gap: 55px;
   width: 1140px;
   margin: 0 auto;
 }
@@ -106,58 +61,25 @@
 
 .oms-promo__steps {
   display: flex;
-  gap: 12px;
+  gap: 20px;
 }
 
 .oms-promo__step {
   position: relative;
-  background-color: #E1F6F4;
+  background-color: #E5F4F2;
   border-radius: 30px;
-  padding: 35px 21px 22px 22px;
+  padding: 35px 13px 31px 20px;
   flex: 1;
   display: flex;
   flex-direction: column-reverse;
-  align-items: center;
   justify-content: flex-end;
-}
-
-.oms-promo__step-number {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 43px;
-  height: 43px;
-  background-color: #f1f9f8;
-  border-radius: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  font-weight: 700;
-  color: #00828a;
-}
-
-.oms-promo__step-icon-wrapper {
-  color: #00828a;
-  margin-bottom: 19px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-}
-
-.oms-promo__step-icon {
-  width: 41px;
-  height: 41px;
-  object-fit: contain;
 }
 
 .oms-promo__step-title {
   font-size: 16px;
   font-weight: 700;
   color: #00828a;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   width: 100%;
   line-height: 1.6;
   letter-spacing: -1%;
@@ -169,6 +91,20 @@
   letter-spacing: -1%;
   color: #545659;
   width: 100%;
+}
+
+.oms-promo__step-icon-wrapper {
+  color: #00828a;
+  margin-bottom: 19px;
+  align-self: center;
+  width: 42px;
+  height: 42px;
+}
+
+.oms-promo__step-icon {
+  width: 41px;
+  height: 41px;
+  object-fit: contain;
 }
 
 .oms-promo__image-wrapper {
@@ -183,7 +119,10 @@
   border-radius: clamp(20px, 15.38px + 1.28vw, 40px);
 }
 
-/* Направления */
+.oms-directions {
+  margin-bottom: 131px;
+}
+
 .oms-directions__container {
   max-width: 1140px;
   margin: 0 auto;
@@ -195,6 +134,49 @@
   font-weight: 700;
   color: #00828a;
   margin-bottom: 28px;
+}
+
+.oms-directions__tablist {
+  display: flex;
+  width: clamp(316px, calc(300.77px + 4.231vw), 382px);
+  gap: 10px;
+  padding: 6px;
+  margin-bottom: 53px;
+  border-radius: 30px;
+  background-color: #f5fbfa;
+}
+
+.oms-directions__tab {
+  height: clamp(32px, calc(30.62px + 0.385vw), 38px);
+  width: clamp(158px, calc(150.38px + 2.115vw), 191px);
+  background-color: #f5fbfa;
+  color: #00828a;
+  border-radius: 30px;
+  font-family: inherit;
+  line-height: 1.6;
+  letter-spacing: -1%;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.oms-directions__tab--active {
+  background-color: #00828a;
+  color: #ffffff;
+}
+
+.oms-directions__tab:focus-visible {
+  outline: 2px solid #005a60;
+  outline-offset: 2px;
+}
+
+.oms-directions__panel {
+  min-width: 316px;
+}
+
+.oms-directions__panel[hidden] {
+  display: none;
 }
 
 .oms-directions__grid {
@@ -251,9 +233,8 @@
   height: 50px;
 }
 
-/* медиазапросы для адаптивности */
-
 @media (max-width: 1200px) {
+
   .oms-promo__container {
     max-width: 940px;
     /* gap: 40px; */
@@ -264,13 +245,13 @@
     margin: 0 auto;
   }
 
+  .oms-promo__step {
+    padding: 30px 16px 17px 17px;
+  }
+
   .oms-promo__image-wrapper {
     width: 300px;
     aspect-ratio: 0;
-  }
-
-  .oms-promo__step {
-    padding: 30px 16px 17px 17px;
   }
 
   .oms-directions__container {
@@ -289,9 +270,10 @@
 }
 
 @media (max-width: 1000px) {
+
   .oms-promo__container {
     width: 100%;
-    padding: 0 30px 0 30px;
+    padding: 0 30px;
     max-width: none;
     gap: 0;
   }
@@ -302,7 +284,7 @@
 
   .oms-directions__container {
     width: 100%;
-    padding: 20px 30px 0 30px;
+    padding: 20px 30px 0;
     max-width: none;
   }
 
@@ -312,8 +294,14 @@
 }
 
 @media (max-width: 670px) {
+
   .oms-promo {
-    padding-bottom: 34px;
+    padding-bottom: 19px;
+  }
+
+  .oms-promo__container {
+    grid-template-columns: 1fr;
+    padding: 0 22px;
   }
 
   .oms-promo__title {
@@ -324,23 +312,25 @@
     margin-bottom: 16px;
   }
 
-  .oms-promo__container {
-    grid-template-columns: 1fr;
-    padding: 0 22px;
+  .oms-promo__steps-heading {
+    padding-left: 0;
+    margin-bottom: 20px;
   }
 
   .oms-promo__steps {
     flex-direction: column;
-  }
-
-  .oms-directions__grid {
-    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .oms-promo__step {
-    padding: 23px 16px 27px 53px;
+    padding: 22px 16px 27px 17px;
+    border-radius: 20px;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .oms-promo__step-title {
+    margin-bottom: 0;
   }
 
   .oms-promo__step-number {
@@ -351,5 +341,31 @@
 
   .oms-promo__step-icon-wrapper {
     margin-bottom: 0;
+  }
+
+  .oms-directions__container {
+    padding: 20px 22px 0;
+  }
+
+  .oms-directions__title {
+    margin-bottom: 15px;
+  }
+
+  .oms-directions__tablist {
+    margin-bottom: 22px;
+  }
+
+  .oms-directions__tab {
+    font-size: 11px;
+  }
+
+  .oms-directions__grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .oms-directions__card {
+    padding: 0 15px 0 23px;
+    border-radius: 20px;
   }
 }
