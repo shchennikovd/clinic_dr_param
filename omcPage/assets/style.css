@@ -35,7 +35,7 @@
 
 .oms-promo__title {
   font-size: clamp(1.875rem, 1.7885rem + 0.3846vw, 2.25rem);
-  color: #00828a;
+  color: #2F948C;
   font-weight: 700;
   margin-bottom: 22px;
 }
@@ -55,7 +55,7 @@
   letter-spacing: -1%;
   line-height: 1.6;
   padding-left: 6px;
-  color: #00828a;
+  color: #2F948C;
   margin-bottom: 22px;
 }
 
@@ -78,7 +78,7 @@
 .oms-promo__step-title {
   font-size: 16px;
   font-weight: 700;
-  color: #00828a;
+  color: #2F948C; 
   margin-bottom: 3px;
   width: 100%;
   line-height: 1.6;
@@ -132,7 +132,7 @@
 .oms-directions__title {
   font-size: clamp(1.375rem, 1.2885rem + 0.3846vw, 1.75rem);
   font-weight: 700;
-  color: #00828a;
+  color: #2F948C;
   margin-bottom: 28px;
 }
 
@@ -150,9 +150,10 @@
   height: clamp(32px, calc(30.62px + 0.385vw), 38px);
   width: clamp(158px, calc(150.38px + 2.115vw), 191px);
   background-color: #f5fbfa;
-  color: #00828a;
+  color: #2F948C;
   border-radius: 30px;
   font-family: inherit;
+  font-weight: 600;
   line-height: 1.6;
   letter-spacing: -1%;
   font-size: 13px;
@@ -162,8 +163,9 @@
 }
 
 .oms-directions__tab--active {
-  background-color: #00828a;
+  background-color: #2F948C;
   color: #ffffff;
+  font-weight: 700;
 }
 
 .oms-directions__tab:focus-visible {
@@ -214,7 +216,7 @@
 .oms-directions__card-title {
   font-size: 17px;
   font-weight: 700;
-  color: #00828a;
+  color: #2F948C;
   max-width: 70%;
   letter-spacing: -1.5%;
   margin-bottom: 20px;
@@ -309,7 +311,7 @@
   }
 
   .oms-promo__description {
-    margin-bottom: 16px;
+    margin-bottom: 37px;
   }
 
   .oms-promo__steps-heading {
