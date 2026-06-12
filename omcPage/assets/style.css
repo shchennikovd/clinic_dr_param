@@ -30,7 +30,6 @@
 .oms-promo__content {
   display: flex;
   flex-direction: column;
-  padding-left: 4px;
 }
 
 .oms-promo__title {
@@ -65,7 +64,6 @@
 }
 
 .oms-promo__step {
-  position: relative;
   background-color: #E5F4F2;
   border-radius: 30px;
   padding: 35px 13px 31px 20px;
@@ -139,7 +137,8 @@
 .oms-directions__tablist {
   display: flex;
   width: clamp(316px, calc(300.77px + 4.231vw), 382px);
-  gap: 10px;
+  min-width: 350px;
+  /* gap: 10px; */
   padding: 6px;
   margin-bottom: 53px;
   border-radius: 30px;
@@ -147,8 +146,11 @@
 }
 
 .oms-directions__tab {
+  flex: 1;
+  min-width: 0;
+
   height: clamp(32px, calc(30.62px + 0.385vw), 38px);
-  width: clamp(158px, calc(150.38px + 2.115vw), 191px);
+  /* width: clamp(158px, calc(150.38px + 2.115vw), 191px); */
   background-color: #f5fbfa;
   color: #2F948C;
   border-radius: 30px;
@@ -306,6 +308,10 @@
     padding: 0 22px;
   }
 
+  .oms-promo__content {
+    margin: 0;
+  }
+
   .oms-promo__title {
     margin-bottom: 10px;
   }
@@ -355,6 +361,7 @@
 
   .oms-directions__tablist {
     margin-bottom: 22px;
+    min-width: 0;
   }
 
   .oms-directions__tab {
@@ -364,6 +371,7 @@
   .oms-directions__grid {
     grid-template-columns: 1fr;
     gap: 15px;
+    justify-self: normal;
   }
 
   .oms-directions__card {
