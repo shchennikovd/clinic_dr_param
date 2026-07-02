@@ -78,22 +78,60 @@
 Каждая директория представляет собой отдельную задачу, выполненную в рамках коммерческого проекта.
 
 ```text
-.
-├── patientsPage/
-│   ├── README.md
+clinic_dr_param/
+├── infertilityTreatmentPage/     # Страница лечения бесплодия
+│   ├── assets/
+│   │   ├── img/                  
+│   │   │   └── image.png
+│   │   ├── fonts.css
+│   │   ├── globals.css
+│   │   ├── style.css
+│   │   └── variables.css
+│   ├── Dockerfile
+│   ├── footer.php
+│   ├── header.php
 │   ├── index.php
-│   ├── style.css
-│   ├── script.js
-│   └── screenshots/
-│
-├── omcPage/
-│   ├── README.md
-│   └── ...
-│
-├── infertilityTreatmentPage/
-│   ├── README.md
-│   └── ...
-│
+│   └── script.js
+├── patientsPage/                 # Страница для пациентов
+│   ├── assets/
+│   │   ├── img/
+│   │   │   └── icons/
+│   │   │       ├── arrow.svg
+│   │   │       ├── present.svg
+│   │   │       ├── shield.svg
+│   │   │       └── star.svg
+│   │   ├── fonts.css
+│   │   ├── globals.css
+│   │   ├── style.css
+│   │   └── variables.css
+│   ├── Dockerfile
+│   ├── footer.php
+│   ├── header.php
+│   └── index.php
+├── omcPage/                      # Страница ОМС
+│   ├── assets/
+│   │   ├── img/
+│   │   │   ├── icons/
+│   │   │   │   ├── baby.svg
+│   │   │   │   ├── check-circle.svg
+│   │   │   │   ├── eye.svg
+│   │   │   │   ├── flower-lotus.svg
+│   │   │   │   ├── kidneys.svg
+│   │   │   │   ├── list.svg
+│   │   │   │   ├── map-pin.svg
+│   │   │   │   ├── surgical-sterilization-svgrepo.svg
+│   │   │   │   └── x-ray.svg
+│   │   │   └── heart.jpg
+│   │   ├── fonts.css
+│   │   ├── globals.css
+│   │   ├── style.css
+│   │   └── variables.css
+│   ├── Dockerfile
+│   ├── footer.php
+│   ├── header.php
+│   ├── index.php
+│   └── script.js
+├── .gitignore
 └── README.md
 ```
 
@@ -108,51 +146,36 @@
 
 # 🎨 Макеты
 
-Для каждой задачи используется отдельный дизайн-макет.
+Все задачи в репозитории разработаны по единому файлу Figma.
 
-| Задача | Figma     |
-| ------ | --------- |
-| patientsPage | 🔗 Ссылка |
-| omcPage | 🔗 Ссылка |
-| infertilityTreatmentPage | 🔗 Ссылка |
+**Ссылка на макеты**
 
----
+> 🔗 *[Ссылка](https://www.figma.com/design/9UdGjXFehVUFzhabiPmoAq/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82%D1%8B-%D0%BA%D0%BB%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8?node-id=0-1&t=N4eDsaT7gzgJQ1JM-1)*
 
-# 📸 Скриншоты
+Каждая директория в репозитории соответствует отдельной задаче и содержит реализацию одного из экранов или разделов, представленных в макете.
 
-## patientsPage
-
-Desktop
-
-> добавить изображение
-
-Mobile
-
-> добавить изображение
 
 ---
 
-## omcPage
+# 📸 Превью выполненных задач
 
-Desktop
+## Лечение бесплодия методом ЭКО
 
-> добавить изображение
-
-Mobile
-
-> добавить изображение
+<img src="./infertility-treatment/screenshots/desktop.png" alt="Лечение бесплодия методом ЭКО" width="700">
 
 ---
 
-## infertilityTreatmentPage
+## Лечение по ОМС
 
-Desktop
+<img src="./oms-treatment/screenshots/desktop.png" alt="Лечение по ОМС" width="700">
 
-> добавить изображение
+---
 
-Mobile
+## Страница врачей
 
-> добавить изображение
+<img src="./doctors-page/screenshots/desktop.png" alt="Страница врачей" width="700">
+
+> 💡 Подробное описание, макеты и дополнительные скриншоты находятся в `README.md` соответствующей задачи.
 
 ---
 
