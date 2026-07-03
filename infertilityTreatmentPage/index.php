@@ -26,7 +26,7 @@
 
       <div class="inf-treat-promo__image-wrapper">
         <img 
-          src="./assets/img/image.png" 
+          src="./assets/img/ultrasoundPictures.jpg" 
           alt="Руки хирурга в медицинских перчатках, сложенные в форме сердца под светом бестеневой операционной лампы" 
           class="inf-treat-promo__image"
         >
