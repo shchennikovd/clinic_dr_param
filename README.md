@@ -161,13 +161,13 @@ clinic_dr_param/
 
 ## Лечение бесплодия методом ЭКО
 
-<img src="./infertility-treatment/screenshots/desktop.png" alt="Лечение бесплодия методом ЭКО" width="700">
+<img src="./photoForREADME/infertilityTreatmentPageDesktop.png" alt="Лечение бесплодия методом ЭКО" width="700">
 
 ---
 
 ## Лечение по ОМС
 
-<img src="./oms-treatment/screenshots/desktop.png" alt="Лечение по ОМС" width="700">
+<img src="./photoForREADME/omcpageDesktop.png" alt="Лечение по ОМС" width="700">
 
 ---
 
