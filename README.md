@@ -171,9 +171,9 @@ clinic_dr_param/
 
 ---
 
-## Страница врачей
+## Страница пациентам
 
-<img src="./doctors-page/screenshots/desktop.png" alt="Страница врачей" width="700">
+<img src="./photoForREADME/patientsPageDesktop.png" alt="Страница врачей" width="700">
 
 > 💡 Подробное описание, макеты и дополнительные скриншоты находятся в `README.md` соответствующей задачи.
 
