@@ -97,9 +97,9 @@ clinic_dr_param/
 
 | Задача | Описание | README | Live Demo |
 |:--|:--|:--:|:--:|
-| 🏥 Лечение бесплодия методом ЭКО | Разработка страницы лечения бесплодия | 📄 | https://clinic-dr-param.onrender.com/ |
-| 🩺 Лечение по ОМС | Разработка страницы лечения по ОМС | 📄 | https://clinic-dr-param-omcpage.onrender.com/ |
-| 👨‍⚕️ Пациентам | Разработка страницы для пациентов | 📄 | https://clinic-dr-param-patientspage-gop4.onrender.com/ |
+| 🏥 Лечение бесплодия методом ЭКО | Разработка страницы лечения бесплодия | [📖 README](https://github.com/shchennikovd/clinic_dr_param/tree/main/infertilityTreatmentPage#readme) | [🌐 Demo](https://clinic-dr-param.onrender.com/) |
+| 🩺 Лечение по ОМС | Разработка страницы лечения по ОМС | [📖 README](https://github.com/shchennikovd/clinic_dr_param/tree/main/omcPage#readme) | [🌐 Demo](https://clinic-dr-param-omcpage.onrender.com/) |
+| 👨‍⚕️ Пациентам | Разработка страницы для пациентов | [📖 README](https://github.com/shchennikovd/clinic_dr_param/tree/main/patientsPage#readme) | [🌐 Demo](https://clinic-dr-param-patientspage-gop4.onrender.com/) |
 
 ---
 
@@ -107,9 +107,7 @@ clinic_dr_param/
 
 Все страницы разработаны по единому дизайн-макету в **Figma**.
 
-🔗 **Макет проекта**
-
-https://www.figma.com/design/9UdGjXFehVUFzhabiPmoAq/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82%D1%8B-%D0%BA%D0%BB%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8
+🔗 **[Открыть макет в Figma](https://www.figma.com/design/9UdGjXFehVUFzhabiPmoAq/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82%D1%8B-%D0%BA%D0%BB%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8)**
 
 ---
 
