@@ -26,7 +26,7 @@
 
 Страница развернута на платформе **Render** и доступна для просмотра без локального запуска проекта.
 
-**🌐 [Открыть демонстрацию](https://clinic-dr-param-patientspage-gop4.onrender.com/)**
+**[🔗 Live Demo](https://clinic-dr-param-patientspage-gop4.onrender.com/)**
 
 ---
 
@@ -94,7 +94,7 @@ patientsPage/
 
 Все страницы проекта разработаны по единому файлу **Figma**.
 
-**🎨 [Открыть макет в Figma](https://www.figma.com/design/9UdGjXFehVUFzhabiPmoAq/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82%D1%8B-%D0%BA%D0%BB%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8?node-id=0-1&t=0R7V6LmMiwt2GQVg-1)**
+**[🔗 Макет страницы](https://www.figma.com/design/9UdGjXFehVUFzhabiPmoAq/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82%D1%8B-%D0%BA%D0%BB%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8?node-id=0-1&t=0R7V6LmMiwt2GQVg-1)**
 
 ---
 
