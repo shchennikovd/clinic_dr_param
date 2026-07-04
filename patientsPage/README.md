@@ -102,15 +102,27 @@ patientsPage/
 
 # 📸 Скриншоты
 
-## Desktop
+<table>
+<tr>
+<td align="center">
 
-<img src="../photoForREADME/patientsPageDesktop.png" width="800">
+**Desktop**
 
----
+<img src="../photoForREADME/patientsPageDesktop.png" width="700">
 
-## Mobile
+</td>
+</tr>
 
-<img src="../photoForREADME/patientsPageMobile.png" width="400">
+<tr>
+<td align="center">
+
+**Mobile**
+
+<img src="../photoForREADME/patientsPageMobile.png" width="300">
+
+</td>
+</tr>
+</table>
 
 ---
 
