@@ -183,12 +183,28 @@
   min-height: 2000px; /* Убрать после добавления контента на страницу */
 }
 
-.inf-treat-info__nav {
-  margin: 20px 0 59px 20px;
+.inf-treat-info__blur {
   position: sticky;
-  top: 0;
+  top: 0px;
+  height: 20px;
+  z-index: 1;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  pointer-events: none;
+}
+
+.inf-treat-info__nav {
+  margin: 12px 0 51px 0;
+  padding: 8px 20px 8px 20px;
+  border-radius: 15px;
+  position: sticky;
+  top: 20px;
   z-index: 2;
   background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
 }
 
 .inf-treat-info__nav-list {
@@ -287,14 +303,22 @@
   }
 
   .inf-treat-info__nav {
-    margin: 20px auto; 
+    margin: 10px auto 20px auto;
     width: max-content;
   }
 }
 
 @media (max-width: 767px) {
+  .inf-treat-info__blur {
+    top: 105px;
+    z-index: 99;
+  }
+
   .inf-treat-info__nav {
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
     top: 115px;
     max-width: calc(100% - 40px);
     padding: 8px 0;
@@ -303,6 +327,24 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+
+    position: sticky;
+    z-index: 100;
+  }
+
+  .inf-treat-info__nav::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    height: 10px;
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    pointer-events: none;
   }
 
   .inf-treat-info__nav::-webkit-scrollbar {

@@ -37,10 +37,11 @@
 
   <section class="inf-treat-info">
     <div class="inf-treat-info__container">
+      <div class="inf-treat-info__blur"></div>
       <nav class="inf-treat-info__nav">
           <ul class="inf-treat-info__nav-list">
               <li class="inf-treat-info__nav-item">
-                  <a href="#why-us" class="inf-treat-info__nav-link">
+                  <a href="#why-us" class="inf-treat-info__nav-link inf-treat-info__nav-link--active">
                       Почему мы?
                   </a>
               </li>
@@ -58,6 +59,18 @@
               </li>
           </ul>
       </nav>
+      <div style="height: 3000px;">
+  <h1>Проверка</h1>
+  <h1>Проверка</h1>
+  <h1>Проверка</h1>
+  <h1>Проверка</h1>
+  <h1>Проверка</h1>
+  <h1>Проверка</h1>
+  <h1>Проверка</h1>
+  <h1>Проверка</h1>
+  <h1>Проверка</h1>
+  <h1>Проверка</h1>
+</div>
     </div>
   </section>
 </main>
