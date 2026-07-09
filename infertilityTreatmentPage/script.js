@@ -8,4 +8,16 @@ document.addEventListener("DOMContentLoaded", () => {
       link.classList.add("inf-treat-info__nav-link--active");
     })
   })
+
+  const nav = document.querySelector('.inf-treat-info__nav');
+  const blur = document.querySelector('.inf-treat-info__blur');
+  
+  window.addEventListener('scroll', () => {
+    const top = parseFloat(getComputedStyle(nav).top);
+  
+    blur.classList.toggle(
+      'is-visible',
+      nav.getBoundingClientRect().top <= top
+    );
+  });
 });

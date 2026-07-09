@@ -37,11 +37,12 @@
 
   <section class="inf-treat-info">
     <div class="inf-treat-info__container">
+    <div class="inf-treat-info__sticky-trigger"></div>
       <div class="inf-treat-info__blur"></div>
       <nav class="inf-treat-info__nav">
           <ul class="inf-treat-info__nav-list">
               <li class="inf-treat-info__nav-item">
-                  <a href="#why-us" class="inf-treat-info__nav-link inf-treat-info__nav-link--active">
+                  <a href="#why-us" class="inf-treat-info__nav-link--active inf-treat-info__nav-link">
                       Почему мы?
                   </a>
               </li>
