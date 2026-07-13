@@ -2,6 +2,22 @@
 
 <main class="inf-treat-main">
   <section class="inf-treat-promo" aria-labelledby="oms-promo-title">
+    <div class="inf-treat-promo__container--breadcrumbs">
+      <nav class="inf-treat-promo-breadcrumbs">
+        <ol class="inf-treat-promo-breadcrumbs__list">
+          <li class="inf-treat-promo-breadcrumbs__item">
+            <a href="#" class="inf-treat-promo-breadcrumbs__link">Пациентам</a>
+          </li>
+          <li class="inf-treat-promo-breadcrumbs__item">
+            <a href="#" class="inf-treat-promo-breadcrumbs__link">Лечение по ОМС для жителей регионов</a>
+          </li>
+          <li class="inf-treat-promo-breadcrumbs__item inf-treat-promo-breadcrumbs__item--current" aria-current="page">
+            Лечение бесплодия методом ЭКО
+          </li>
+        </ol>
+      </nav>
+    </div>
+
     <div class="inf-treat-promo__container">
       
       <div class="inf-treat-promo__content">
@@ -37,7 +53,7 @@
 
   <section class="inf-treat-info">
     <div class="inf-treat-info__container">
-    <div class="inf-treat-info__sticky-trigger"></div>
+      <div class="inf-treat-info__sticky-trigger"></div>
       <div class="inf-treat-info__blur"></div>
       <nav class="inf-treat-info__nav">
           <ul class="inf-treat-info__nav-list">
